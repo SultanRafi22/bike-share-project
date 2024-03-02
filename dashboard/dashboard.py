@@ -7,8 +7,10 @@ import streamlit as st
 sns.set_theme(style='dark')
 st.title("Bike Sharing Analysis :bike: :sparkles: ")
 
-day_df = pd.read_csv('../dashboard/main_data/day_bike_data.csv')
-hour_df = pd.read_csv('../dashboard/main_data/hour_bike_data.csv')
+# day_df = pd.read_csv('../dashboard/main_data/day_bike_data.csv')
+day_df = pd.read_csv('https://raw.githubusercontent.com/SultanRafi22/bike-share-project/main/dashboard/main_data/day_bike_data.csv')
+# hour_df = pd.read_csv('../dashboard/main_data/hour_bike_data.csv')
+hour_df = pd.read_csv('https://raw.githubusercontent.com/SultanRafi22/bike-share-project/main/dashboard/main_data/hour_bike_data.csv')
 
 st.sidebar.title("Bike Sharing Analysis :bike:")
 with st.sidebar:
